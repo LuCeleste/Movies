@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Movies </title>
+    <title>Trending Movies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/media/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
 
@@ -20,8 +21,10 @@
                     <li> <a href="#home">Home</a></li>
                     <li class="comedia" > <a href="#comedia">Comedia</a></li>
                     <li> <a href="#musical">Musicales</a></li>
-                    <li class="drama"> <a href="#drama">Drama</a></li>
+                    <li class="comedia"> <a href="#drama">Drama</a></li>
+                    
                 </ul>
+                <a class="tmdb" href="https://www.themoviedb.org/" target="_blank"> <img src="media/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt=""> <p>TMDB API</p></a>
             </nav>
             <div class="container">
                 <section id="home" class="home">
@@ -31,10 +34,9 @@
                     <div class="content">
                         <h3>Home</h3>
                         <h1>De que trata este proyecto?</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque explicabo nisi quia, culpa
-                            rerum ex ipsam reiciendis voluptas sit, quibusdam voluptate minus distinctio magnam officiis
-                            architecto recusandae amet vero officia.</p>
-                        <a href="">Github Luciana Celeste</a>
+                        <p>Peliculas en tendencia en este momento de diferentes generos. Utilizacion de api de TMDB y practica para landing page horizontal.</p>
+                        <a href="https://github.com/LuCeleste" target="_blank">Github Luciana Celeste</a>
+
                     </div>
                 </section>
                 <section id="comedia" class="home">
@@ -42,46 +44,12 @@
                         <img src="" alt="">
                     </div>
                     <div class="content">
-                        <h3>Peliculas favoritas</h3>
+                        <h3>Popular movies right now</h3>
                         <h1>Comedia</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque explicabo nisi quia, culpa
-                            rerum ex ipsam reiciendis voluptas sit, quibusdam voluptate minus distinctio magnam officiis
-                            architecto recusandae amet vero officia.</p>
-                        <a href="">Github Luciana Celeste</a>
-                        <div class="movies">
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
+                        <p>Comedias del momento</p>
+                        <a href="https://github.com/LuCeleste" target="_blank">Github Luciana Celeste</a>
+                        <div id="moviesComedia">
+
                         </div>
                     </div>
                 </section>
@@ -90,46 +58,12 @@
                         <img src="" alt="">
                     </div>
                     <div class="content">
-                        <h3>Peliculas favoritas</h3>
+                        <h3>Popular movies right now</h3>
                         <h1>Musicales</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque explicabo nisi quia, culpa
-                            rerum ex ipsam reiciendis voluptas sit, quibusdam voluptate minus distinctio magnam officiis
-                            architecto recusandae amet vero officia.</p>
-                        <a href="">Github Luciana Celeste</a>
-                        <div class="movies">
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
+                        <p>Musicales del momento</p>
+                        <a href="https://github.com/LuCeleste" target="_blank">Github Luciana Celeste</a>
+                        <div id="moviesMusical">
+
                         </div>
                     </div>
                 </section>
@@ -138,46 +72,12 @@
                         <img src="" alt="">
                     </div>
                     <div class="content">
-                        <h3>Peliculas favoritas</h3>
+                        <h3>Popular movies right now</h3>
                         <h1>Drama</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque explicabo nisi quia, culpa
-                            rerum ex ipsam reiciendis voluptas sit, quibusdam voluptate minus distinctio magnam officiis
-                            architecto recusandae amet vero officia.</p>
-                        <a href="">Github Luciana Celeste</a>
-                        <div class="movies">
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
-                            <div class="movie">
-                                <img src="" alt="">
-                                <div class="movieInfo">
-                                    <h3>Movie Title</h3>
-                                </div>
-                                <div class="overview">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi culpa similique ut
-                                    delectus numquam praesentium ratione at itaque eveniet! Deleniti reprehenderit, eum
-                                    porro quis esse pariatur dolores amet. Accusamus, eius.
-                                </div>
-                            </div>
+                        <p>Peliculas dramaticas del momento.</p>
+                        <a href="https://github.com/LuCeleste" target="_blank">Github Luciana Celeste</a>
+                        <div id="moviesDrama">
+
                         </div>
                     </div>
                 </section>

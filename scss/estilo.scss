@@ -1,5 +1,8 @@
-$font: 'Comfortaa', cursive;
-$fonttitilos: 'Aboreto', cursive;
+$font: "Comfortaa", cursive;
+$fonttitilos: "Aboreto", cursive;
+$violeta: #212c3b;
+$crema: #e4c3b2;
+$rosa: #9e4a5c;
 
 * {
   box-sizing: border-box;
@@ -11,9 +14,9 @@ $fonttitilos: 'Aboreto', cursive;
   height: 100vh;
   display: flex;
   flex-direction: row;
-  background-color:#eaac8b;
-  color: #355070;
-//   padding-left: 150px;
+  background-color: $crema;
+  color: $violeta;
+  //   padding-left: 150px;
 }
 .main-container {
   width: 100vw;
@@ -49,125 +52,133 @@ main {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   height: 100vh;
-  background-color: #355070;
+  background-color: $violeta;
+  color: $crema;
   padding-top: 50px;
+  padding-bottom: 50px;
   font-family: $fonttitilos;
-  li{
-    border-bottom-left-radius:  .5rem;
-    border-top-left-radius:  .5rem;
-    padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .tmdb {
+    width: 130px;
+    &:hover {
+      color: $crema;
+    }
   }
-  ul li:hover {
-    background-color: #eaac8b;
-    color: #355070;
+  li {
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    padding: 5px;
+    &:hover {
+      background-color: $crema;
+      color: $violeta;
+      a {
+        color: $violeta;
+      }
+    }
   }
   a {
     width: 200px;
     text-decoration: none;
-    color: #eaac8b;
-    &:hover{
-        color: #355070;
-    }
+    color: $crema;
   }
 }
+
 .home {
-    padding-left: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
   display: flex;
   flex-direction: column;
-  justify-content:right;
+  justify-content: right;
   align-items: flex-end;
   width: 100vw;
   flex-wrap: wrap;
   font-family: $font;
-  h1{
+  h1 {
     font-family: $fonttitilos;
   }
-  p{
+  p {
     max-width: 700px;
   }
 }
-.movies{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .movie{
-        width: 300px;
-    }
+#moviesDrama,
+#moviesComedia,
+#moviesMusical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.content{
-    display: flex;
-    flex-direction: column;
-    a{
-        color: #355070;
-        text-decoration: none;
-        border: solid #355070;
-        border-radius: .5rem;
-        padding: 10px;
-        width: fit-content;
-        margin: 10px;
-        &:hover{
-            color: #b56576;
-            border: solid #b56576;
-            transition-duration: .5s;
-        }
-
-    }
+.movie {
+  width: 350px;
+  padding: 10px;
+  img {
+    width: 200px;
+  }
 }
-
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  a {
+    color: $violeta;
+    text-decoration: none;
+    border: solid $violeta;
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 10px;
+    &:hover {
+      color: $rosa;
+      border: solid $rosa;
+      transition-duration: 0.5s;
+    }
+  }
+}
 
 #comedia {
-    background-color: #b56576;
-    color:#eaac8b ;
-    a{
-        color: #eaac8b;
-        text-decoration: none;
-        border: solid #eaac8b;
-        border-radius: .5rem;
-        padding: 10px;
-        width: fit-content;
-        margin: 10px;
-        &:hover{
-            color: #355070;
-            border: solid #355070;
-            transition-duration: .5s;
-        }
+  background-color: $rosa;
+  color: $crema;
+  a {
+    color: $crema;
+    text-decoration: none;
+    border: solid $crema;
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 10px;
+    &:hover {
+      color: $violeta;
+      border: solid $violeta;
+      transition-duration: 0.5s;
     }
+  }
 }
-ul li.comedia {
-    &:hover{
-    background-color: #b56576;
+li.comedia {
+  &:hover {
+    background-color: $rosa;
+    color: $crema;
+    a {
+      color: $crema;
+    }
+  }
 }
-}
-ul li.comedia a{
-    &:hover{
-    color: #eaac8b;
-}
-}
+
 #drama {
-    background-color: #b56576;
-    color:#eaac8b ;
-    a{
-        color: #eaac8b;
-        text-decoration: none;
-        border: solid #eaac8b;
-        border-radius: .5rem;
-        padding: 10px;
-        width: fit-content;
-        margin: 10px;
-        &:hover{
-            color: #355070;
-            border: solid #355070;
-            transition-duration: .5s;
-        }
+  background-color: $rosa;
+  color: $crema;
+  a {
+    color: $crema;
+    text-decoration: none;
+    border: solid $crema;
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 10px;
+    &:hover {
+      color: $violeta;
+      border: solid $violeta;
+      transition-duration: 0.5s;
     }
-}
-ul li.drama {
-    &:hover{
-    background-color: #b56576;
-}
-}
-ul li.drama a{
-    &:hover{
-    color: #eaac8b;
-}
+  }
 }

@@ -9,8 +9,8 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
-  background-color: #eaac8b;
-  color: #355070;
+  background-color: #e4c3b2;
+  color: #212c3b;
 }
 
 .main-container {
@@ -50,30 +50,42 @@ main {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   height: 100vh;
-  background-color: #355070;
+  background-color: #212c3b;
+  color: #e4c3b2;
   padding-top: 50px;
+  padding-bottom: 50px;
   font-family: "Aboreto", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-nav .tmdb {
+  width: 130px;
+}
+.main-nav .tmdb:hover {
+  color: #e4c3b2;
 }
 .main-nav li {
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   padding: 5px;
 }
-.main-nav ul li:hover {
-  background-color: #eaac8b;
-  color: #355070;
+.main-nav li:hover {
+  background-color: #e4c3b2;
+  color: #212c3b;
+}
+.main-nav li:hover a {
+  color: #212c3b;
 }
 .main-nav a {
   width: 200px;
   text-decoration: none;
-  color: #eaac8b;
-}
-.main-nav a:hover {
-  color: #355070;
+  color: #e4c3b2;
 }
 
 .home {
   padding-left: 200px;
+  padding-right: 200px;
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -89,90 +101,90 @@ main {
   max-width: 700px;
 }
 
-.movies {
+#moviesDrama,
+#moviesComedia,
+#moviesMusical {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.movies .movie {
-  width: 300px;
+
+.movie {
+  width: 350px;
+  padding: 10px;
+}
+.movie img {
+  width: 200px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 .content a {
-  color: #355070;
+  color: #212c3b;
   text-decoration: none;
-  border: solid #355070;
+  border: solid #212c3b;
   border-radius: 0.5rem;
   padding: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 10px;
+  margin-top: 10px;
 }
 .content a:hover {
-  color: #b56576;
-  border: solid #b56576;
+  color: #9e4a5c;
+  border: solid #9e4a5c;
   transition-duration: 0.5s;
 }
 
 #comedia {
-  background-color: #b56576;
-  color: #eaac8b;
+  background-color: #9e4a5c;
+  color: #e4c3b2;
 }
 #comedia a {
-  color: #eaac8b;
+  color: #e4c3b2;
   text-decoration: none;
-  border: solid #eaac8b;
+  border: solid #e4c3b2;
   border-radius: 0.5rem;
   padding: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 10px;
+  margin-top: 10px;
 }
 #comedia a:hover {
-  color: #355070;
-  border: solid #355070;
+  color: #212c3b;
+  border: solid #212c3b;
   transition-duration: 0.5s;
 }
 
-ul li.comedia:hover {
-  background-color: #b56576;
+li.comedia:hover {
+  background-color: #9e4a5c;
+  color: #e4c3b2;
 }
-
-ul li.comedia a:hover {
-  color: #eaac8b;
+li.comedia:hover a {
+  color: #e4c3b2;
 }
 
 #drama {
-  background-color: #b56576;
-  color: #eaac8b;
+  background-color: #9e4a5c;
+  color: #e4c3b2;
 }
 #drama a {
-  color: #eaac8b;
+  color: #e4c3b2;
   text-decoration: none;
-  border: solid #eaac8b;
+  border: solid #e4c3b2;
   border-radius: 0.5rem;
   padding: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 10px;
+  margin-top: 10px;
 }
 #drama a:hover {
-  color: #355070;
-  border: solid #355070;
+  color: #212c3b;
+  border: solid #212c3b;
   transition-duration: 0.5s;
-}
-
-ul li.drama:hover {
-  background-color: #b56576;
-}
-
-ul li.drama a:hover {
-  color: #eaac8b;
 }
