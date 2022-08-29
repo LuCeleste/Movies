@@ -11,7 +11,7 @@ $rosa: #9e4a5c;
 }
 .container {
   width: 400vw;
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   background-color: $crema;
@@ -22,7 +22,7 @@ $rosa: #9e4a5c;
   width: 100vw;
   height: 100vh;
   overflow-x: scroll;
-  overflow-y: scroll;
+  overflow-y: hidden;
   &:after {
     // content: '';
     position: absolute;
@@ -46,9 +46,9 @@ main {
 }
 .main-nav {
   position: fixed;
-  font-size: 1rem;
-  padding-left: 5px;
-  width: 100px;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  width: 150px;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   height: 100vh;
@@ -61,7 +61,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   .tmdb {
-    width: 80px;
+    width: 130px;
     &:hover {
       color: $crema;
     }
@@ -79,7 +79,7 @@ main {
     }
   }
   a {
-    width: 100px;
+    width: 200px;
     text-decoration: none;
     color: $crema;
   }
@@ -87,8 +87,8 @@ main {
 }
 
 .home {
-  padding-left: 120px;
-  padding-right: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -98,26 +98,23 @@ main {
   font-family: $font;
   h1 {
     font-family: $fonttitilos;
-    font-size: 1rem;
-    flex-wrap: wrap;
   }
   p {
-    width: 180px;
-    flex-wrap: wrap;
+    max-width: 700px;
   }
 }
 #moviesDrama,
 #moviesComedia,
 #moviesMusical {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .movie {
-  width: 200px;
-  padding-top: 10px;
+  width: 350px;
+  padding: 10px;
   img {
-    width: 180px;
+    width: 200px;
   }
 }
 .content {
@@ -130,7 +127,7 @@ main {
     border: solid $violeta;
     border-radius: 0.5rem;
     padding: 10px;
-    width: 100px;
+    width: fit-content;
     margin-top: 10px;
     &:hover {
       color: $rosa;
@@ -149,7 +146,7 @@ main {
     border: solid $crema;
     border-radius: 0.5rem;
     padding: 10px;
-    width: 100px;
+    width: fit-content;
     margin-top: 10px;
     &:hover {
       color: $violeta;
@@ -177,7 +174,7 @@ li.comedia {
     border: solid $crema;
     border-radius: 0.5rem;
     padding: 10px;
-    width: 100px;
+    width: fit-content;
     margin-top: 10px;
     &:hover {
       color: $violeta;
@@ -185,11 +182,4 @@ li.comedia {
       transition-duration: 0.5s;
     }
   }
-}
-
-@media only screen and (min-width: 600px) {
-  @import "mediatablet";
-}
-@media only screen and (min-width: 1024px) {
-  @import "mediadesktop";
 }
