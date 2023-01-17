@@ -2,10 +2,15 @@ const apiKey = '181c69466ca24b32232c10c5e8a93323';
 const topRatedMusical = "https://api.themoviedb.org/3/movie/popular?with_genres=10402&api_key=181c69466ca24b32232c10c5e8a93323";
 const topRatedDrama = "https://api.themoviedb.org/3/movie/popular?with_genres=18&api_key=181c69466ca24b32232c10c5e8a93323";
 const topRatedComedia = "https://api.themoviedb.org/3/movie/popular?with_genres=35&api_key=181c69466ca24b32232c10c5e8a93323";
+const topRatedAnimacion = "https://api.themoviedb.org/3/movie/popular?with_genres=16&api_key=181c69466ca24b32232c10c5e8a93323";
+const topRatedTerror = "https://api.themoviedb.org/3/movie/popular?with_genres=27&api_key=181c69466ca24b32232c10c5e8a93323";
+
 const imgPath = "https://image.tmdb.org/t/p/w1280/";
-const moviesDrama = document.getElementById("moviesDrama")
-const moviesComedia = document.getElementById("moviesComedia")
-const moviesMusical = document.getElementById("moviesMusical")
+const moviesDrama = document.getElementById("moviesDrama");
+const moviesComedia = document.getElementById("moviesComedia");
+const moviesMusical = document.getElementById("moviesMusical");
+const moviesAnimacion = document.getElementById("moviesAnimacion");
+const moviesTerror = document.getElementById("moviesTerror");
 
 getMovies(topRatedComedia)
 
@@ -89,5 +94,61 @@ function displayMoviesMusical(movies) {
         </div>        
         `
         moviesMusical.appendChild(moviesElement)
+    });
+}
+
+
+getMoviesAnimacion(topRatedAnimacion)
+
+async function getMoviesAnimacion(url) {
+    const res= await fetch(url)
+    const data = await res.json()
+    displayMoviesAnimacion(data.results.slice(0,3))
+}
+
+function displayMoviesAnimacion(movies) {
+    moviesAnimacion.innerHTML = '';
+    movies.forEach((movie) => {
+        const {title, poster_path, overview} = movie
+        const moviesElement =document.createElement('div')
+        moviesElement.classList.add('movie')
+        moviesElement.innerHTML = `
+        <img src="${imgPath + poster_path}" alt="${title}">
+        <div class="movieInfo">
+            <h3>${title}</h3>
+        </div>
+        <div class="overview">
+        ${overview}
+        </div>        
+        `
+        moviesAnimacion.appendChild(moviesElement)
+    });
+}
+
+
+getMoviesTerror(topRatedTerror)
+
+async function getMoviesTerror(url) {
+    const res= await fetch(url)
+    const data = await res.json()
+    displayMoviesTerror(data.results.slice(0,3))
+}
+
+function displayMoviesTerror(movies) {
+    moviesTerror.innerHTML = '';
+    movies.forEach((movie) => {
+        const {title, poster_path, overview} = movie
+        const moviesElement =document.createElement('div')
+        moviesElement.classList.add('movie')
+        moviesElement.innerHTML = `
+        <img src="${imgPath + poster_path}" alt="${title}">
+        <div class="movieInfo">
+            <h3>${title}</h3>
+        </div>
+        <div class="overview">
+        ${overview}
+        </div>        
+        `
+        moviesTerror.appendChild(moviesElement)
     });
 }

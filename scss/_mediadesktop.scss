@@ -1,8 +1,8 @@
 $font: "Comfortaa", cursive;
-$fonttitilos: "Aboreto", cursive;
-$violeta: #212c3b;
-$crema: #e4c3b2;
-$rosa: #9e4a5c;
+$fonttitilos: "Comfortaa", cursive;
+$violeta: #000;
+$crema: #fff;
+$rosa: #8f89fc;
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ $rosa: #9e4a5c;
   padding: 0;
 }
 .container {
-  width: 400vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -22,7 +22,7 @@ $rosa: #9e4a5c;
   width: 100vw;
   height: 100vh;
   overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-y: scroll;
   &:after {
     // content: '';
     position: absolute;
@@ -105,7 +105,7 @@ main {
 }
 #moviesDrama,
 #moviesComedia,
-#moviesMusical {
+#moviesMusical, #moviesTerror, #moviesAnimacion{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -137,7 +137,7 @@ main {
   }
 }
 
-#comedia {
+#comedia, #drama, #terror {
   background-color: $rosa;
   color: $crema;
   a {
@@ -165,21 +165,3 @@ li.comedia {
   }
 }
 
-#drama {
-  background-color: $rosa;
-  color: $crema;
-  a {
-    color: $crema;
-    text-decoration: none;
-    border: solid $crema;
-    border-radius: 0.5rem;
-    padding: 10px;
-    width: fit-content;
-    margin-top: 10px;
-    &:hover {
-      color: $violeta;
-      border: solid $violeta;
-      transition-duration: 0.5s;
-    }
-  }
-}

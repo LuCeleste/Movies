@@ -1,8 +1,8 @@
 $font: "Comfortaa", cursive;
-$fonttitilos: "Aboreto", cursive;
-$violeta: #212c3b;
-$crema: #e4c3b2;
-$rosa: #9e4a5c;
+$fonttitilos: "Comfortaa", cursive;
+$violeta: #000;
+$crema: #fff;
+$rosa: #8f89fc;
 
 * {
   box-sizing: border-box;
@@ -61,7 +61,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   .tmdb {
-    width: 130px;
+    width: 90px;
     &:hover {
       color: $crema;
     }
@@ -83,7 +83,9 @@ main {
     text-decoration: none;
     color: $crema;
   }
-
+p{
+font-size: 1rem;
+}
 }
 
 .home {
